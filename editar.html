@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Inquilino</title>
+</head>
+<body>
+
+    <h1>Editar Inquilino</h1>
+
+    <h2>Dados do Inquilino</h2>
+    <form>
+        <label>Nome:</label> <br>
+        <input type="text" value="João Silva" required> <br><br>
+
+        <label>Data de Nascimento:</label> <br>
+        <input type="date" value="1990-01-10" required> <br><br>
+
+        <label>CPF:</label> <br>
+        <input type="text" value="123.456.789-00" required> <br><br>
+
+        <label>RG:</label> <br>
+        <input type="text" value="12.345.678-9" required> <br><br>
+
+        <label>Telefone:</label> <br>
+        <input type="tel" value="(11) 98765-4321" required> <br><br>
+
+        <label>Email:</label> <br>
+        <input type="email" value="joao.silva@email.com" required> <br><br>
+
+        <label>Endereço:</label> <br>
+        <input type="text" value="Rua Exemplo, 123 - São Paulo/SP" required> <br><br>
+
+        <button type="submit">Salvar Alterações</button>
+        <button type="reset">Restaurar</button>
+    </form>
+
+    <h2>Documentos do Inquilino</h2>
+
+    <form>
+        <ul>
+            <li>
+                <input type="checkbox" name="docs" value="RG.pdf"> RG.pdf
+            </li>
+            <li>
+                <input type="checkbox" name="docs" value="CPF.pdf"> CPF.pdf
+            </li>
+            <li>
+                <input type="checkbox" name="docs" value="Comprovante de Residência.pdf"> Comprovante de Residência.pdf
+            </li>
+        </ul>
+
+        <button type="submit">Excluir Anexos Selecionados</button>
+
+        <h3>Adicionar Novo Documento</h3>
+        <input type="file">
+    </form>
+
+</body>
+</html>
