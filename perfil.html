@@ -4,33 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil do Inquilino</title>
+
+    <!-- Fonte Inter (peso 400 = regular) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Fonte Open Sans (peso 400 = regular, 600 = semi-bold) -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
+
 <body>
 
-    <h1>Perfil do Inquilino</h1>
-
-    <h2>Dados do Inquilino</h2>
-    <p><strong>Nome:</strong> João Silva</p>
-    <p><strong>Data de Nascimento:</strong> 10/01/1990</p>
-    <p><strong>CPF:</strong> 123.456.789-00</p>
-    <p><strong>RG:</strong> 12.345.678-9</p>
-    <p><strong>Telefone:</strong> (11) 98765-4321</p>
-    <p><strong>Email:</strong> joao.silva@email.com</p>
-    <p><strong>Endereço:</strong> Rua Exemplo, 123 - São Paulo/SP</p>
-
-
-    <h2>Documentos do Inquilino</h2>
-    <ul>
-        <li><a href="https://www.w3schools.com/">RG.pdf</a></li> 
-        <li><a href="https://www.w3schools.com/">Comprovante de Residência.pdf</a></li> 
-       <li><a href="https://www.w3schools.com/">CPF.pdf</a></li> 
-    </ul>
-
-    <br><br>
-    <div>
-        <button onclick="location.href='editar.html'">Editar</button>
-        <button onclick="location.href='inicio.html'">Voltar</button>
+    <h1>Inquilinos / Perfil do Inquilino</h1>
+    <h2>Perfil do Inquilino</h2>
+  
+    <div class="caixa-branca">
+      <h2>Dados do Inquilino</h2>
+  
+      <div class="form-container">
+        <div>
+          <label>Nome</label>
+          <span class="dado-fixo"></span>
+        </div>
+        <div>
+          <label>Telefone</label>
+          <span class="dado-fixo"></span>
+        </div>
+  
+        <div>
+          <label>Data de nascimento</label>
+          <span class="dado-fixo"></span>
+        </div>
+        <div>
+          <label>E-mail</label>
+          <span class="dado-fixo"></span>
+        </div>
+  
+        <div>
+          <label>CPF</label>
+          <span class="dado-fixo"></span>
+        </div>
+        <div>
+          <label>Endereço</label>
+          <span class="dado-fixo"></span>
+        </div>
+  
+        <div>
+          <label>RG</label>
+          <span class="dado-fixo"></span>
+        </div>
+        <div></div> <!-- para alinhamento -->
+  
+        <div class="botoes-container">
+            <a href="editar.html" class="btn">Editar</a>
+            <a href="inicio.html" class="btn">Voltar</a>
+        </div>
+      </div>
     </div>
-    
+  
+    <div class="caixa-branca">
+      <h2>Documentos do inquilino</h2>
+      <ul>
+        <!-- Lista de documentos  -->
+      </ul>
+    </div>
+
+    <div class="caixa-branca">
+        <h2>Informações Adicionais</h2>
+        <div class="form-container">
+          <div>
+            <label>Código Imóvel</label>
+            <span class="dado-fixo"></span>
+          </div>
+          <div>
+            <label>Data de Cadastro</label>
+            <span class="dado-fixo"></span>
+          </div>
+        </div>
+    </div>
+      
+    <script src="../js/script.js"></script>
 </body>
 </html>
