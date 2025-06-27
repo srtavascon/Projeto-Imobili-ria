@@ -3,26 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dados do Inquilino</title>
-</head>
-<body>
-    <div>
-        <h1>Dados do Inquilino</h1>
-        <form>
-            <input type="text" placeholder="Nome" required> <br>
-            <input type="date" placeholder="Data de Nascimento" required> <br>
-            <input type="text" placeholder="CPF" required> <br>
-            <input type="text" placeholder="RG" required> <br>
-            <input type="tel" placeholder="Telefone" required> <br>
-            <input type="email" placeholder="Email" required> <br>
-            <input type="text" placeholder="Endereço" required> <br><br>
-            <button type="reset">Limpar</button>
-        </form>
+    <title>Cadastro Inquilino</title>
 
+    <!-- Fonte Inter (peso 400 = regular) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Fonte Open Sans (peso 400 = regular, 600 = semi-bold) -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <h1>Inquilinos / Perfil do Inquilino / Cadastro</h1>
+    <h2>Perfil do Inquilino</h2>
+
+    <div class="caixa-branca">
+        <h2>Dados do Inquilino</h2>
+        <form class="form-container">
+
+            <div>
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" name="nome" class="input-form" placeholder="Nome" required>
+            </div>
+            
+            <div>
+                <label for="telefone">Telefone *</label>
+                <input type="tel" id="telefone" name="telefone" class="input-form" placeholder="Telefone" required>
+            </div>
+            
+            <div>
+                <label for="data_nascimento">Data de Nascimento *</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" class="input-form" required>
+            </div>
+            
+            <div>
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" class="input-form" placeholder="Email" required>
+            </div>
+            
+            <div>
+                <label for="cpf">CPF *</label>
+                <input type="text" id="cpf" name="cpf" class="input-form" placeholder="CPF" required>
+            </div>
+            
+            <div>
+                <label for="endereco">Endereço *</label>
+                <input type="text" id="endereco" name="endereco" class="input-form" placeholder="Endereço" required>
+            </div>
+            
+            <div>
+                <label for="rg">RG *</label>
+                <input type="text" id="rg" name="rg" class="input-form" placeholder="RG" required>
+            </div>
+
+            <div class="botoes-container">
+                <button type="reset">Limpar</button>
+                <button type="submit">Salvar</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <div class="caixa-branca">
         <h2>Documentos do Inquilino</h2>
-        <input type="file" multiple>
-    </div><br><br>
-    <button onclick="location.href='inicio.html'">Voltar</button>
-    <button onclick="location.href='perfil.html'">Salvar novo Inquilino</button>
+        <label for="documentos" class="upload-button">Escolher Arquivos</label>
+        <input type="file" id="documentos" name="documentos[]" multiple>
+    </div>
+
+   <script src="../js/script.js"></script>
 </body>
 </html>
